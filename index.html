@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web App – Simple Interest Calculator</title>
+   </head>
+   <body>
+        <div class="main">
+        <h1>Simple Interest Calculator</h1>       
+        <table>
+            <tbody><tr>
+                <td>Amount</td>
+                <td><input type="number" id="pamount"></td>
+            </tr>
+            <tr>
+                <td>Interest Rate</td>
+                <td><input type="range" id="rate" min="1" max="20" step="0.25" value="10.50"  oninput="showVal(this.value)" onchange="showVal(this.value)"><span id="InterestRate">10.50%</span></td>
+            </tr>
+            <tr>
+                <td>No. of Years</td>
+                     <td><select id="years">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+   </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="compute()">Compute Interest</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><span id="result"></span></td>
+            </tr>
+        </tbody></table>                              
+        <footer>© Everyone Can Get Rich</footer>
+        
+        </div>
+
+</body></html>
